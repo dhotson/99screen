@@ -31,11 +31,11 @@ for (var j=0; j<500; j++)
 
 var path1 = paper.path('M0.004,86.29c0,0,22.687,4.6,42.602-17.377c11.07-12.217,10.602-31.521,8.157-44.998 C48.41,10.942,36.67,0.011,25.639,0C12.16-0.013-0.258,13.709,0.004,27.419S6.419,48.724,17.16,50.942 c18.312,3.783,30.686-13.847,30.686-16.266');
 var path2 = paper.path('M0.004,86.29c0,0,22.687,4.6,42.602-17.377c11.07-12.217,10.602-31.521,8.157-44.998 C48.41,10.942,36.67,0.011,25.639,0C12.16-0.013-0.258,13.709,0.004,27.419S6.419,48.724,17.16,50.942 c18.312,3.783,30.686-13.847,30.686-16.266');
-path1.scale(10, 10, 0, 0);
-path2.scale(10, 10, 0, 0);
+path1.scale(9, 9, 0, 0);
+path2.scale(9, 9, 0, 0);
 
-path1.translate(300, 50);
-path2.translate(1100, 50);
+path1.translate(380, 100);
+path2.translate(1030, 100);
 
 path1.hide();
 path2.hide();
@@ -49,7 +49,7 @@ for (var i=0; i<sourceImages.length; i++)
 	var pos = (i / (sourceImages.length - 1)) * path.getTotalLength();
 	var point = path.getPointAtLength(pos);
 
-	var scale = 0.15 * Math.random() + 0.05;
+	var scale = 0.15 * Math.random() + 0.08;
 	var w = 500 * scale;
 	var h = 370 * scale;
 
@@ -65,7 +65,7 @@ for (var i=0; i<sourceImages.length; i++)
 		img = paper.image(sourceImages[i], point.x - (w/2), point.y-(h/2), w, h).attr({fill: '#000000'})
 	);
 
-	set.translate((Math.random() - 0.5) * 70, (Math.random() - 0.5) * 70);
+	set.translate((Math.random() - 0.5) * 85, (Math.random() - 0.5) * 85);
 	set.rotate((Math.random() - 0.5) * 60, point.x, point.y);
 }
 </script>
