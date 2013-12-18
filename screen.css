@@ -1,0 +1,17 @@
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font:400 45px/1 gesta;
+    font-style:italic;
+    color:#fff;
+}
+
+h1 {
+    font-size:45px;
+    position:absolute;
+    bottom:30px;
+    margin:0 auto;
+    text-align:center;
+    width:100%;
+}

@@ -1,17 +1,12 @@
 <html>
 <body>
-<style>
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #FFFFFF;
-}
-</style>
+<link href="gesta.css" rel="stylesheet" />
+<link href="screen.css" rel="stylesheet" />
 <script src="raphael-min.js"></script>
 
 <script>
-var width = 1920;
-var height = 1080;
+var width = window.innerWidth - 40;
+var height = window.innerHeight - 40;
 
 var paper = Raphael(0, 0, width, height);
 
@@ -25,9 +20,6 @@ for (var j=0; j<500; j++)
 {
 	sourceImages.push('http://entries3.99static.com/designs/4308'+r()+'-smallcrop');
 }
-
-
-
 
 var path1 = paper.path('M0.004,86.29c0,0,22.687,4.6,42.602-17.377c11.07-12.217,10.602-31.521,8.157-44.998 C48.41,10.942,36.67,0.011,25.639,0C12.16-0.013-0.258,13.709,0.004,27.419S6.419,48.724,17.16,50.942 c18.312,3.783,30.686-13.847,30.686-16.266');
 var path2 = paper.path('M0.004,86.29c0,0,22.687,4.6,42.602-17.377c11.07-12.217,10.602-31.521,8.157-44.998 C48.41,10.942,36.67,0.011,25.639,0C12.16-0.013-0.258,13.709,0.004,27.419S6.419,48.724,17.16,50.942 c18.312,3.783,30.686-13.847,30.686-16.266');
@@ -70,5 +62,6 @@ for (var i=0; i<sourceImages.length; i++)
 }
 </script>
 
+<h1>We've got 99 problems, finding a sweet office ain't one.</h1>
 </body>
 </html>
